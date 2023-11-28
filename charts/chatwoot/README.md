@@ -1,4 +1,6 @@
- # Chatwoot
+helm dependency build needs to be done to rebuilt Chart.lock file after changing version
+
+# Chatwoot
 
 [Chatwoot](https://chatwoot.com) is a customer engagement suite. an open-source alternative to Intercom, Zendesk, Salesforce Service Cloud, etc. 🔥💬
 
