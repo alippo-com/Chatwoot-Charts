@@ -94,7 +94,7 @@ Set postgres host
 */}}
 {{- define "chatwoot.postgresql.host" -}}
 {{- if .Values.postgresql.enabled -}}
-{{- template "chatwoot.postgresql.fullname" . -}}
+{{- .Values.postgresql.postgresqlHost -}}
 {{- else -}}
 {{- .Values.postgresql.postgresqlHost -}}
 {{- end -}}
@@ -138,7 +138,7 @@ Set redis host
 */}}
 {{- define "chatwoot.redis.host" -}}
 {{- if .Values.redis.enabled -}}
-{{- template "chatwoot.redis.fullname" . -}}-master
+{{- .Values.redis.host }}
 {{- else -}}
 {{- .Values.redis.host }}
 {{- end -}}
